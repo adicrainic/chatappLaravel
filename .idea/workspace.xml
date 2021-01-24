@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d377fb34-7e37-4edc-9eb4-ea1a46a1b356" name="Default Changelist" comment="" />
+    <list default="true" id="d377fb34-7e37-4edc-9eb4-ea1a46a1b356" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ChatRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ChatRoom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/chatRoomSelection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/chatRoomSelection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/container.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/inputMessage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/inputMessage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +217,7 @@
       <workItem from="1611161357348" duration="804000" />
       <workItem from="1611164404576" duration="4042000" />
       <workItem from="1611219668741" duration="31000" />
-      <workItem from="1611480218540" duration="7050000" />
+      <workItem from="1611480218540" duration="15389000" />
     </task>
     <servers />
   </component>

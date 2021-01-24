@@ -29,7 +29,18 @@ class ChatController extends Controller
         $newMessage->message = $request->message;
         $newMessage->save();
 
-        broadcast(new NewChatMessage( $newMessage))->toOthers(); //send events to another people(not current user)
+        broadcast(new NewChatMessage( $newMessage ))->toOthers(); //send events to another people(not current user)
         return $newMessage;
+    }
+
+    public function newRoom(Request $request) {
+        $this->validate($request, [
+            'name' => 'required| unique:chat_rooms'
+        ]);
+        $newRoom = new ChatRoom;
+        $newRoom->user_id = Auth::id();
+        $newRoom->name = $request->name;
+        $newRoom->save();
+        return $newRoom;
     }
 }

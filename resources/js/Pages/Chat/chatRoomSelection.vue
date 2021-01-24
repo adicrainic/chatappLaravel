@@ -1,29 +1,35 @@
 <template>
+
     <div class="grid grid-cols-2">
         <div class="font-bold text-xl">
             {{ selected.name}} Chat
         </div>
-        <div>
-            <select
-                v-model="selected"
-                @change="$emit('roomchanged', selected)"
-                class="float-right">
+            <div>
+                <select
+                    v-model="selected"
+                    @change="$emit('roomchanged', selected)"
+                    class="float-right">
 
-                <option
-                    v-for="(room, index) in rooms"
-                    :key="index"
-                    :value="room"
-                >
-                    {{ room.name }}
-                </option>
-            </select>
-        </div>
+                    <option
+                        v-for="(room, index) in rooms"
+                        :key="index"
+                        :value="room"
+                    >
+                        {{ room.name }}
+                    </option>
+                </select>
+                <a href="/newRoom">
+                <button class="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg float-right"> + </button>
+                </a>
+            </div>
     </div>
 
 </template>
 
 <script>
+
 export default {
+
     props: ['rooms', 'currentRoom'],
     data: function () {
         return {

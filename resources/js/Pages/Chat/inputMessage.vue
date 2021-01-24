@@ -8,7 +8,7 @@
                    class="col-span-5 outline-none p-1"
                    />
             <button @click="sendMessage()"
-                    class="place self-end bg-gray-500 hover:bg-blue-700 p-1 mt-1 rounded text-white">
+                    class="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg">
                 Send
             </button>
         </div>
