@@ -1,0 +1,4 @@
+sanctum
+jetstream
+jetstream inertia
+tailwind
