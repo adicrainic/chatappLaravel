@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,10 +38,18 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/newRoom', function () {
     return Inertia::render('Chat/createRoomForm');
 })->name('createRoomForm');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/administration', function () {
+    return Inertia::render('Administration');
+})->name('administration');
+
 
 Route::middleware('auth:sanctum')->get('/chat/rooms', [ChatController::class, 'rooms']);
 Route::middleware('auth:sanctum')->get('/chat/room/{roomId}/messages', [ChatController::class, 'messages']);
 Route::middleware('auth:sanctum')->post('/chat/room/{roomId}/message', [ChatController::class, 'newMessage']);
 
 Route::middleware('auth:sanctum')->post('/chat/newRoom', [ChatController::class, 'newRoom']);
+Route::middleware('auth:sanctum')->get('/users', [UserController::class, 'users']);
+Route::middleware('auth:sanctum')->delete('/deleteUser/{id}', [UserController::class, 'deleteUser']);
+Route::middleware('auth:sanctum')->post('/user/create', [UserController::class, 'createUser']);
+
 

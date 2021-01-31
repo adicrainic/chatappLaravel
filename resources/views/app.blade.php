@@ -19,5 +19,16 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        @if(Session::has('success'))
+
+            <div class="alert alert-success">
+
+                {{Session::get('success')}}
+
+            </div>
+
+        @endif
+
     </body>
 </html>

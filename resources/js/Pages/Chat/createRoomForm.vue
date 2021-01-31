@@ -12,15 +12,15 @@
 
             <div class="clearfix"></div>
             </div>
-            <button type="submit" class="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg float-right"> Create </button>
+            <button type="submit" class="mr-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg float-right"> Create </button>
         </div>
         </form>
     </app-layout>
 </template>
 
 <script>
-import AppLayout from '@/Layouts/AppLayout'
-
+import AppLayout from '@/Layouts/AppLayout';
+import VueRouter from 'vue-router';
 
 export default {
     components: {
@@ -32,20 +32,6 @@ export default {
         }
     },
     methods : {
-        // createRoom () {
-        //     axios.post('/chat/newRoom', {
-        //         name: this.name
-        //     })
-        //         .then(( response ) => {
-        //
-        //             this.$emit('roomcreated');
-        //             this.form.reset();
-        //
-        //         })
-        //         .catch( error => {
-        //             console.log(error);
-        //         })
-        // },
         formSubmit(e) {
             e.preventDefault();
             let currentObj = this;
@@ -54,6 +40,7 @@ export default {
             })
                 .then(function (response) {
                     currentObj.output = response.data;
+                    this.$router.push('chat');
                 })
                 .catch(function (error) {
                     currentObj.output = error;

@@ -15,7 +15,7 @@
         "@tailwindcss/forms": "^0.2.1",
         "@tailwindcss/typography": "^0.3.0",
         "autoprefixer": "^10.0.2",
-        "axios": "^0.21",
+        "axios": "^0.21.1",
         "laravel-mix": "^6.0.10",
         "lodash": "^4.17.19",
         "portal-vue": "^2.1.7",
@@ -27,7 +27,14 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "emoji-mart-vue": "^2.6.6",
         "laravel-echo": "^1.10.0",
-        "pusher-js": "^7.0.2"
+        "moment": "^2.29.1",
+        "pusher-js": "^7.0.2",
+        "vform": "^1.0.1",
+        "vue-emoji-picker": "^1.0.1",
+        "vue-progressbar": "^0.7.5",
+        "vue-router": "^3.5.1",
+        "watch": "^1.0.2"
     }
 }

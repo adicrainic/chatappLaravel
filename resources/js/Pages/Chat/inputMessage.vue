@@ -1,6 +1,6 @@
 <template>
     <div class="relative h-10 m-1">
-        <div style="border-top:1px solid #6E6E6E;" class="grid grid-cols-6">
+        <div class="grid grid-cols-6">
             <input type="text"
                    v-model="message"
                    @keyup.enter="sendMessage()"
@@ -8,23 +8,26 @@
                    class="col-span-5 outline-none p-1"
                    />
             <button @click="sendMessage()"
-                    class="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg">
+                    class="mr-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-full rounded-lg">
                 Send
             </button>
         </div>
     </div>
 
-
 </template>
 
 <script>
 import Button from "@/Jetstream/Button";
+import EmojiPicker from 'vue-emoji-picker';
+
 export default {
-    components: {Button},
+    components: {Button,EmojiPicker},
     props: ['room'],
     data: function () {
         return {
-            message: ''
+            message: '',
+            input: '',
+            search: '',
         }
     },
     methods: {
@@ -46,7 +49,10 @@ export default {
             .catch( error => {
                 console.log(error);
             })
-        }
+        },
+        insert(emoji) {
+            this.input += emoji
+        },
     }
 }
 </script>

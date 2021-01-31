@@ -23,6 +23,9 @@
                                 <jet-nav-link :href="route('chat')" :active="route().current('chat')">
                                     Chat
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('administration')" :active="route().current('administration')">
+                                    Administration
+                                </jet-nav-link>
                             </div>
                         </div>
 
@@ -149,6 +152,9 @@
                         </jet-responsive-nav-link>
                         <jet-responsive-nav-link :href="route('chat')" :active="route().current('chat')">
                             Chat
+                        </jet-responsive-nav-link>
+                        <jet-responsive-nav-link :href="route('administration')" :active="route().current('administration')">
+                            Administration
                         </jet-responsive-nav-link>
                     </div>
 
