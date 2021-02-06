@@ -21,6 +21,7 @@
 <script>
 import AppLayout from '@/Layouts/AppLayout';
 import VueRouter from 'vue-router';
+import Swal from "sweetalert2";
 
 export default {
     components: {
@@ -41,9 +42,19 @@ export default {
                 .then(function (response) {
                     currentObj.output = response.data;
                     this.$router.push('chat');
+                    Swal.fire(
+                        'Success!',
+                        'Room Created with success.You can start to chat now on '.response.data.name,
+                        'success'
+                    )
                 })
                 .catch(function (error) {
                     currentObj.output = error;
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Error on creating Room!',
+                    })
                 });
         }
     }

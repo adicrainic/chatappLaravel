@@ -6,19 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d377fb34-7e37-4edc-9eb4-ea1a46a1b356" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Administration.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Administration.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/chatRoomSelection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/chatRoomSelection.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/container.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/createRoomForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/createRoomForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/inputMessage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/inputMessage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/messageContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/messageContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Chat/messageItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Chat/messageItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,7 @@
         <option value="composer.json" />
         <option value="package.json" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -230,10 +227,25 @@
       <workItem from="1611652665661" duration="559000" />
       <workItem from="1611656203746" duration="811000" />
       <workItem from="1612087459805" duration="13532000" />
+      <workItem from="1612165147290" duration="16000" />
+      <workItem from="1612202202145" duration="479000" />
+      <workItem from="1612206574876" duration="51000" />
+      <workItem from="1612286159204" duration="2759000" />
+      <workItem from="1612603125506" duration="11935000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
 </project>
